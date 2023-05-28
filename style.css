@@ -1,0 +1,477 @@
+style.css
+
+html, body,
+ ul, ol, li,
+ h1, h2, h3, h4, h5, h6, p,
+ form, input, div {
+ margin: 0;
+ padding: 0;
+ }
+
+ html {
+  /*height: 100%;*/
+  /*width: 100%;*/
+ }
+ 
+ body {
+  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+  background-color: #C0C0C0;
+
+  /* height: 100%;
+  width: 100%; */
+
+
+ }
+
+.li {
+  list-style: square inside;
+}
+
+
+
+
+
+/*PCの場合*/
+
+
+
+
+
+
+
+
+@media screen and (min-width: 950px) {
+
+  body {
+    font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+    background-color: #C0C0C0;
+  
+    height: 100%;
+    width: 100%;
+  
+  
+   }
+
+  header {
+   
+    /* padding-top: 10px; */
+  
+    display: grid;
+    justify-content: start;
+  
+    grid-template-columns: auto,auto;
+  
+    opacity: 0.5;
+    background-color: rgb(255, 0, 183);
+    cursor: text;
+  
+    
+    display: block;
+
+
+    height: 100px;
+    
+
+   
+  
+  
+  }
+  
+  
+  header .outline1 {
+    font-size: 60px;
+    color: yellow;
+    display: flex;
+    text-align: center;
+    margin-left: 210px;
+    font-family: "Arial Black";
+    font-weight: bold;
+
+  
+   
+
+  }
+  
+  
+  header .outline2 {
+      display: none;
+
+      animation: glowing 2s ease-in-out infinite;
+      color: blue; /* 追加 */
+      text-shadow: 0 0 5px rgba(0, 0, 255, 0.8), 0 0 10px rgba(0, 0, 255, 0.8), 0 0 20px rgba(0, 0, 255, 0.8); /* 追加 */
+
+      font-size: 20px;
+  }
+  
+
+
+
+  
+
+
+
+  @keyframes glowing {
+    0% {
+      color: blue;
+      text-shadow: 0 0 5px rgba(0, 0, 255, 0.8), 0 0 10px rgba(0, 0, 255, 0.8), 0 0 20px rgba(0, 0, 255, 0.8);
+    }
+    50% {
+      color: white;
+      /* text-shadow: none; */
+    }
+    100% {
+      color: blue;
+      text-shadow: 0 0 5px rgba(0, 0, 255, 0.8), 0 0 10px rgba(0, 0, 255, 0.8), 0 0 20px rgba(0, 0, 255, 0.8);
+    }
+  }
+  
+  
+
+
+
+  
+
+  
+  
+
+
+
+
+
+  
+  header h4 {
+    writing-mode: vertical-rl;
+    color: yellow;
+  
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  
+    background: black;
+  }
+  
+  header h2 {
+    text-align: center;
+  
+    /*grid-column: 2;*/
+    /*grid-row: 1;*/
+  
+   overflow: hidden;
+  
+  } 
+  
+  header p {
+    font-family: sans-serif;
+  
+    /*grid-column: 2;*/
+    /*grid-row: 2;*/
+  
+    overflow: hidden;
+  }
+  
+  header h5 {
+    display: flex;
+    align-items: flex-end;
+  }
+
+
+
+  
+
+
+
+
+.left-box {
+ width: 100%;
+ /*height: 300px;*/
+ position: relative;
+ /*background: darkred;*/
+ /*width: 80%;*/
+ height: 50px;
+ text-align: center;
+ /*margin-left: 10%;*/
+
+
+}
+
+.left-box:before {
+ top: 0;
+ left: 50%;
+ width: 50%;
+ height: 100%;
+ content: '';
+ position: absolute;
+ /*background: #e3d7a3;*/
+}
+
+.left-box img {
+  /*margin-left: 25%;*/
+  margin-right: 750px;
+  vertical-align: middle;
+  margin-top: 70px;
+
+
+  border-radius: 10px;
+  border-image: linear-gradient(#f6b73c, #4d9f0c) 30;;
+
+  color: #474747;
+  background: whitesmoke;/*背景色*/
+
+  border-top: double 7px #4ec4d3;
+  border-bottom: double 7px #4ec4d3;
+  border-left: double 7px #4ec4d3;
+  border-right: double 7px #4ec4d3;
+
+  aspect-ratio: 16/20;
+}
+
+
+
+
+.right-box {
+  float: right;
+  width: 50%;
+  background-color: #FAB1AF;
+  z-index: 1;
+  padding-bottom: 20px;
+}
+
+.explain {
+    font-size: 15px;
+}
+
+
+
+
+a#instagram {
+   background: linear-gradient(135deg, #427EFF 0%, #F13F79 70%) no-repeat;
+   overflow: hidden;
+   font-size: 20px;
+   font-weight: bold;
+   letter-spacing: 0;
+   position: relative;
+   border-radius: 4px;
+   margin-left: 15px;
+   margin-right: 10px;
+   text-decoration: none;
+   margin-bottom: 5px;
+ }
+ a#facebook {
+   background: #3B5998;
+   overflow: hidden;
+   font-weight: bold;
+   font-family:'Courier',sans-serif;
+   border-radius: 4px;
+   font-size: 20px;
+   color: white;
+   text-decoration: none;
+ }
+
+
+
+footer {
+  /*position: absolute;*/
+  
+  /* position: fixed;
+  width: 100%; */
+
+  position: relative;
+  
+  top: 140px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+
+
+}
+
+
+
+footer h3 {
+  padding-top: 20px;
+
+  background-color: #B4E4FF;
+  height: 40px;
+  width: 100%;
+
+  text-align: center;
+  
+
+
+  
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*スマホの場合*/
+
+
+@media screen and (max-width: 767px) {
+  /* モバイル用のスタイルを記述 */
+
+  body {
+    background-color: #C0C0C0;
+    margin-top: -10px;
+  }
+
+  header {
+    opacity: 0.5;
+    background-color: rgb(255, 0, 183);
+
+    height: 110px; 
+
+    position: absolute;
+    top: auto;
+    top: 870px;
+    width: 100%;
+    
+  }
+
+  header .outline1 {
+    font-size: 20px;
+    margin-left: 10px;
+
+    color: yellow;
+  }
+
+  header .outline2 {
+    display: none;
+    animation: glowing 2s ease-in-out infinite;
+    color: blue; /* 追加 */
+    text-shadow: 0 0 5px rgba(0, 0, 255, 0.8), 0 0 10px rgba(0, 0, 255, 0.8), 0 0 20px rgba(0, 0, 255, 0.8); /* 追加 */
+
+    font-size: 2px;
+  }
+
+  
+
+  @keyframes glowing {
+    0% {
+      color: blue;
+      text-shadow: 0 0 5px rgba(0, 0, 255, 0.8), 0 0 10px rgba(0, 0, 255, 0.8), 0 0 20px rgba(0, 0, 255, 0.8);
+    }
+    50% {
+      color: white;
+      /* text-shadow: none; */
+    }
+    100% {
+      color: blue;
+      text-shadow: 0 0 5px rgba(0, 0, 255, 0.8), 0 0 10px rgba(0, 0, 255, 0.8), 0 0 20px rgba(0, 0, 255, 0.8);
+    }
+  }
+
+  header h4 {
+    display: none;
+  }
+
+  header h2 {
+    text-align: left;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  header p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .left-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-box img {
+    margin: 30px;
+    margin-left: auto 0;
+    margin-right: auto 0;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+  }
+
+  .left-box img {
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+
+
+  .right-box {
+    width: 100%;
+    float: none;
+    background-color: #FAB1AF;
+    padding-bottom: 10px;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+
+  .explain {
+    font-size: 12px;
+  }
+
+  a#instagram {
+    background: linear-gradient(135deg, #427EFF 0%, #F13F79 70%) no-repeat;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    position: relative;
+    border-radius: 4px;
+    margin: 5px;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+  }
+
+  a#facebook {
+    background: #3B5998;
+    overflow: hidden;
+    font-weight: bold;
+    font-family: 'Courier', sans-serif;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+  }
+
+  footer {
+    position: relative;
+    bottom: -110px;
+    /* margin-top: 10px; */
+  }
+
+  footer h3 {
+    padding-top: 20px;
+    background-color: #B4E4FF;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+  }
+
+ 
+}
